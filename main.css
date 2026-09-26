@@ -55,7 +55,7 @@ img {
 .logo {
     font-size: 1.35rem;
     font-weight: 700;
-    color: var(--color-accent);
+    color: var(--color-text);
     text-decoration: none;
 }
 
