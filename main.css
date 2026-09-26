@@ -147,8 +147,8 @@ main {
 
 .btn-primary {
     padding: 0.6rem 1.4rem;
-    background-color: var(--color-accent);
-    color: #fff;
+    background-color: #000000;  
+    color: #ffffff;             
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -158,7 +158,7 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent-dark);
+    background-color: #1f2933;   
 }
 
 a:focus-visible,
