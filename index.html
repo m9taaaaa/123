@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Parts — каталог компьютерных комплектующих</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#top" class="logo">PC&nbsp;Parts</a>
+            <nav class="main-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#filters">Подбор</a></li>
+                    <li><a href="#about">О проекте</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <section class="hero">
+            <h1>Каталог компьютерных комплектующих</h1>
+            <p>
+                Собрать ПК проще, когда все характеристики под рукой. В каталоге
+                собраны процессоры, видеокарты, материнские платы и память
+                с ключевыми параметрами: сокет, TDP, объём и частоты. Фильтры
+                помогут быстро найти совместимые детали.
+            </p>
+        </section>
+
+        <section id="filters" class="filters" aria-labelledby="filters-title">
+            <h2 id="filters-title">Поиск и фильтрация</h2>
+            <form class="filter-form" action="#" method="get">
+                <div class="field">
+                    <label for="search">Поиск по названию</label>
+                    <input type="search" id="search" name="search"
+                           placeholder="Например: Ryzen">
+                </div>
+
+                <div class="field">
+                    <label for="category">Тип комплектующего</label>
+                    <select id="category" name="category">
+                        <option value="">Все типы</option>
+                        <option value="cpu">Процессор</option>
+                        <option value="gpu">Видеокарта</option>
+                        <option value="mb">Материнская плата</option>
+                        <option value="ram">Оперативная память</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="vendor">Производитель</label>
+                    <select id="vendor" name="vendor">
+                        <option value="">Любой</option>
+                        <option value="amd">AMD</option>
+                        <option value="intel">Intel</option>
+                        <option value="nvidia">NVIDIA</option>
+                        <option value="kingston">Kingston</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="max-price">Максимальная цена, ₽</label>
+                    <input type="number" id="max-price" name="max_price"
+                           min="0" step="1000" placeholder="80000">
+                </div>
+
+                <button type="submit" class="btn-primary">Подобрать</button>
+            </form>
+        </section>
+
+        <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+            <h2 id="catalog-title">Популярные комплектующие</h2>
+
+            <div class="cards-grid">
+
+                <article class="card">
+                    <img src="https://placehold.co/400x240/4a6fa5/ffffff?text=Ryzen+7+7800X3D"
+                         alt="Процессор AMD Ryzen 7 7800X3D">
+                    <div class="card-body">
+                        <h3>AMD Ryzen 7 7800X3D</h3>
+                        <p>Игровой процессор с 3D-кэшем, отличный выбор для сборки под игры.</p>
+                        <ul class="card-meta">
+                            <li><span>Тип:</span> Процессор</li>
+                            <li><span>Сокет:</span> AM5</li>
+                            <li><span>TDP:</span> 120 Вт</li>
+                            <li><span>Цена:</span> 45 000 ₽</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://placehold.co/400x240/6a9b6a/ffffff?text=Core+i5-14600K"
+                         alt="Процессор Intel Core i5-14600K">
+                    <div class="card-body">
+                        <h3>Intel Core i5-14600K</h3>
+                        <p>Универсальный процессор для работы и игр, хорошо разгоняется.</p>
+                        <ul class="card-meta">
+                            <li><span>Тип:</span> Процессор</li>
+                            <li><span>Сокет:</span> LGA1700</li>
+                            <li><span>TDP:</span> 125 Вт</li>
+                            <li><span>Цена:</span> 32 000 ₽</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://placehold.co/400x240/a56a6a/ffffff?text=RTX+4070+Super"
+                         alt="Видеокарта NVIDIA GeForce RTX 4070 Super">
+                    <div class="card-body">
+                        <h3>NVIDIA GeForce RTX 4070 Super</h3>
+                        <p>Видеокарта для 1440p-гейминга и работы с нейросетями.</p>
+                        <ul class="card-meta">
+                            <li><span>Тип:</span> Видеокарта</li>
+                            <li><span>Память:</span> 12 ГБ GDDR6X</li>
+                            <li><span>TDP:</span> 220 Вт</li>
+                            <li><span>Цена:</span> 75 000 ₽</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://placehold.co/400x240/8a7fa5/ffffff?text=RX+7800+XT"
+                         alt="Видеокарта AMD Radeon RX 7800 XT">
+                    <div class="card-body">
+                        <h3>AMD Radeon RX 7800 XT</h3>
+                        <p>Сбалансированное решение для игр в 1440p с большим объёмом памяти.</p>
+                        <ul class="card-meta">
+                            <li><span>Тип:</span> Видеокарта</li>
+                            <li><span>Память:</span> 16 ГБ GDDR6</li>
+                            <li><span>TDP:</span> 263 Вт</li>
+                            <li><span>Цена:</span> 68 000 ₽</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://placehold.co/400x240/5a8a8a/ffffff?text=B650+Tomahawk"
+                         alt="Материнская плата MSI MAG B650 Tomahawk">
+                    <div class="card-body">
+                        <h3>MSI MAG B650 Tomahawk</h3>
+                        <p>Надёжная плата под AM5 с хорошим питанием и VRM-охлаждением.</p>
+                        <ul class="card-meta">
+                            <li><span>Тип:</span> Материнская плата</li>
+                            <li><span>Сокет:</span> AM5</li>
+                            <li><span>Формат:</span> ATX</li>
+                            <li><span>Цена:</span> 22 000 ₽</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://placehold.co/400x240/9a8a5a/ffffff?text=DDR5+6000"
+                         alt="Комплект оперативной памяти Kingston Fury DDR5">
+                    <div class="card-body">
+                        <h3>Kingston Fury Beast DDR5-6000</h3>
+                        <p>Комплект 2×16 ГБ с профилем EXPO для быстрой загрузки и работы.</p>
+                        <ul class="card-meta">
+                            <li><span>Тип:</span> Оперативная память</li>
+                            <li><span>Объём:</span> 32 ГБ (2×16)</li>
+                            <li><span>Частота:</span> 6000 МГц</li>
+                            <li><span>Цена:</span> 14 000 ₽</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="about" class="about" aria-labelledby="about-title">
+            <h2 id="about-title">Как подобрать комплектующие</h2>
+            <p>
+                Начните с процессора и материнской платы — они должны иметь
+                одинаковый сокет. Затем подберите видеокарту под разрешение
+                монитора и блок питания с запасом по мощности. Оперативную
+                память выбирайте с учётом поддержки платформы (DDR4 или DDR5).
+            </p>
+            <ul class="about-list">
+                <li>Сокет процессора и платы должны совпадать.</li>
+                <li>TDP влияет на выбор блока питания и охлаждения.</li>
+                <li>Объём видеопамяти важен для высоких разрешений.</li>
+                <li>Частота ОЗУ раскрывается вместе с поддержкой EXPO/XMP.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>PC Parts — учебный проект каталога комплектующих.</p>
+        <p>2026 · Цены и характеристики приведены для примера.</p>
+    </footer>
+
+</body>
+</html>
