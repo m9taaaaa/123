@@ -148,7 +148,7 @@ main {
 .btn-primary {
     padding: 0.6rem 1.4rem;
     background-color: #000000;  
-    color: #ffffff;             
+    color: #ffffff;              
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -161,10 +161,7 @@ main {
     background-color: #1f2933;   
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible {
+.btn-primary:focus-visible {
     outline: 3px solid var(--color-accent);
     outline-offset: 2px;
 }
