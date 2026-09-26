@@ -255,6 +255,7 @@ select:focus-visible {
     text-align: center;
     color: var(--color-muted);
     font-size: 0.9rem;
+    font-weight: 700;  
 }
 
 .site-footer p {
